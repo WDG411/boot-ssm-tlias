@@ -1,0 +1,356 @@
+2025-05-06 14:57:49.874 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 17.0.4.1 with PID 16852 (E:\my_project\tlias\tlias-web-management\target\classes started by forwardSun in E:\my_project\tlias)
+2025-05-06 14:57:49.876 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-05-06 14:57:50.776 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-05-06 14:57:50.784 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-06 14:57:50.786 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-05-06 14:57:50.787 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-05-06 14:57:50.825 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-05-06 14:57:50.825 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 923 ms
+2025-05-06 14:57:51.427 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-05-06 14:57:51.437 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path ''
+2025-05-06 14:57:51.442 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 1.821 seconds (process running for 8.014)
+2025-05-06 14:57:53.570 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-06 14:57:53.570 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-05-06 14:57:53.571 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2025-05-06 14:57:53.596 [http-nio-8080-exec-1] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 14:57:53.614 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-05-06 14:57:53.874 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2b5c3932
+2025-05-06 14:57:53.875 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-05-06 15:00:16.219 [http-nio-8080-exec-4] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 15:07:17.717 [http-nio-8080-exec-7] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 15:07:20.547 [http-nio-8080-exec-6] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 15:07:25.067 [http-nio-8080-exec-5] ERROR com.itheima.exception.GlobalExceptionHandler-程序出错啦~
+org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.itheima.pojo.Result com.itheima.controller.DeptController.add(com.itheima.pojo.Dept)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:164)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:135)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:178)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2025-05-06 15:08:08.189 [http-nio-8080-exec-3] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 15:10:33.598 [http-nio-8080-exec-8] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 15:10:39.386 [http-nio-8080-exec-2] INFO  com.itheima.controller.DeptController-新增部门:Dept(id=null, name=陈广润, createTime=null, updateTime=null)
+2025-05-06 15:10:39.402 [http-nio-8080-exec-2] INFO  com.itheima.aop.OperationLogAspect-记录操作日志: OperateLog(id=null, operateEmpId=null, operateTime=2025-05-06T15:10:39.397524500, className=com.itheima.controller.DeptController, methodName=add, methodParams=[Dept(id=null, name=陈广润, createTime=2025-05-06T15:10:39.386453600, updateTime=2025-05-06T15:10:39.386453600)], returnValue=Result(code=1, msg=success, data=null), costTime=11)
+2025-05-06 15:10:39.433 [http-nio-8080-exec-9] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 15:10:55.386 [http-nio-8080-exec-10] INFO  com.itheima.controller.DeptController-新增部门:Dept(id=null, name=, createTime=null, updateTime=null)
+2025-05-06 15:10:55.397 [http-nio-8080-exec-10] INFO  com.itheima.aop.OperationLogAspect-记录操作日志: OperateLog(id=null, operateEmpId=null, operateTime=2025-05-06T15:10:55.397113100, className=com.itheima.controller.DeptController, methodName=add, methodParams=[Dept(id=null, name=, createTime=2025-05-06T15:10:55.390183800, updateTime=2025-05-06T15:10:55.390183800)], returnValue=Result(code=1, msg=success, data=null), costTime=11)
+2025-05-06 15:10:55.411 [http-nio-8080-exec-1] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 15:11:04.943 [http-nio-8080-exec-4] INFO  com.itheima.controller.DeptController-新增部门:Dept(id=null, name=jhbkj, createTime=null, updateTime=null)
+2025-05-06 15:11:04.952 [http-nio-8080-exec-4] INFO  com.itheima.aop.OperationLogAspect-记录操作日志: OperateLog(id=null, operateEmpId=null, operateTime=2025-05-06T15:11:04.949041700, className=com.itheima.controller.DeptController, methodName=add, methodParams=[Dept(id=null, name=jhbkj, createTime=2025-05-06T15:11:04.943197700, updateTime=2025-05-06T15:11:04.943197700)], returnValue=Result(code=1, msg=success, data=null), costTime=6)
+2025-05-06 15:11:04.963 [http-nio-8080-exec-7] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 15:12:13.655 [http-nio-8080-exec-6] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 15:12:15.995 [http-nio-8080-exec-5] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 15:12:19.026 [http-nio-8080-exec-3] INFO  com.itheima.controller.DeptController-新增部门:Dept(id=null, name=dsvsv, createTime=null, updateTime=null)
+2025-05-06 15:12:19.037 [http-nio-8080-exec-3] INFO  com.itheima.aop.OperationLogAspect-记录操作日志: OperateLog(id=null, operateEmpId=null, operateTime=2025-05-06T15:12:19.037498200, className=com.itheima.controller.DeptController, methodName=add, methodParams=[Dept(id=null, name=dsvsv, createTime=2025-05-06T15:12:19.026905500, updateTime=2025-05-06T15:12:19.026905500)], returnValue=Result(code=1, msg=success, data=null), costTime=11)
+2025-05-06 15:12:19.050 [http-nio-8080-exec-8] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 15:12:29.283 [http-nio-8080-exec-2] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 15:12:33.284 [http-nio-8080-exec-9] INFO  com.itheima.controller.DeptController-新增部门:Dept(id=null, name=avsdv, createTime=null, updateTime=null)
+2025-05-06 15:12:33.292 [http-nio-8080-exec-9] INFO  com.itheima.aop.OperationLogAspect-记录操作日志: OperateLog(id=null, operateEmpId=null, operateTime=2025-05-06T15:12:33.292646300, className=com.itheima.controller.DeptController, methodName=add, methodParams=[Dept(id=null, name=avsdv, createTime=2025-05-06T15:12:33.285357100, updateTime=2025-05-06T15:12:33.285357100)], returnValue=Result(code=1, msg=success, data=null), costTime=8)
+2025-05-06 15:12:33.306 [http-nio-8080-exec-10] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 15:34:43.131 [http-nio-8080-exec-1] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 15:44:56.467 [http-nio-8080-exec-4] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 15:45:03.331 [http-nio-8080-exec-7] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 15:47:35.055 [http-nio-8080-exec-6] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 15:47:38.073 [http-nio-8080-exec-5] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 15:50:25.642 [http-nio-8080-exec-3] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 15:50:30.294 [http-nio-8080-exec-8] INFO  com.itheima.controller.DeptController-新增部门:Dept(id=null, name=ds, createTime=null, updateTime=null)
+2025-05-06 15:50:30.300 [http-nio-8080-exec-8] INFO  com.itheima.aop.OperationLogAspect-记录操作日志: OperateLog(id=null, operateEmpId=null, operateTime=2025-05-06T15:50:30.300659400, className=com.itheima.controller.DeptController, methodName=add, methodParams=[Dept(id=null, name=ds, createTime=2025-05-06T15:50:30.294909400, updateTime=2025-05-06T15:50:30.294909400)], returnValue=Result(code=1, msg=success, data=null), costTime=6)
+2025-05-06 15:50:30.321 [http-nio-8080-exec-2] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 15:50:52.010 [http-nio-8080-exec-9] INFO  com.itheima.controller.DeptController-新增部门:Dept(id=null, name=sasc, createTime=null, updateTime=null)
+2025-05-06 15:50:52.017 [http-nio-8080-exec-9] INFO  com.itheima.aop.OperationLogAspect-记录操作日志: OperateLog(id=null, operateEmpId=null, operateTime=2025-05-06T15:50:52.017846300, className=com.itheima.controller.DeptController, methodName=add, methodParams=[Dept(id=null, name=sasc, createTime=2025-05-06T15:50:52.011037800, updateTime=2025-05-06T15:50:52.011037800)], returnValue=Result(code=1, msg=success, data=null), costTime=7)
+2025-05-06 15:50:52.037 [http-nio-8080-exec-10] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 15:51:41.476 [http-nio-8080-exec-1] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 15:51:46.231 [http-nio-8080-exec-4] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 15:52:43.819 [http-nio-8080-exec-7] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 15:53:45.052 [http-nio-8080-exec-6] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 15:56:31.129 [http-nio-8080-exec-5] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 15:57:01.454 [http-nio-8080-exec-3] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 15:57:04.241 [http-nio-8080-exec-8] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 15:57:25.824 [http-nio-8080-exec-2] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 15:57:28.072 [http-nio-8080-exec-9] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 15:58:57.134 [http-nio-8080-exec-10] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 15:59:39.676 [http-nio-8080-exec-1] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:01:48.416 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2025-05-06 16:01:48.428 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2025-05-06 16:12:41.893 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 17.0.4.1 with PID 9204 (E:\my_project\tlias\tlias-web-management\target\classes started by forwardSun in E:\my_project\tlias)
+2025-05-06 16:12:41.896 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-05-06 16:12:42.582 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-05-06 16:12:42.586 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-06 16:12:42.586 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-05-06 16:12:42.586 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-05-06 16:12:42.617 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-05-06 16:12:42.617 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 697 ms
+2025-05-06 16:12:43.102 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-05-06 16:12:43.116 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path ''
+2025-05-06 16:12:43.122 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 1.469 seconds (process running for 1.924)
+2025-05-06 16:12:46.264 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-06 16:12:46.264 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-05-06 16:12:46.265 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2025-05-06 16:12:46.283 [http-nio-8080-exec-1] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:12:46.297 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-05-06 16:12:46.464 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1e2d5072
+2025-05-06 16:12:46.466 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-05-06 16:16:06.682 [http-nio-8080-exec-6] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:16:08.290 [http-nio-8080-exec-8] INFO  com.itheima.controller.DeptController-根据ID查询部门: 40
+2025-05-06 16:16:11.683 [http-nio-8080-exec-4] INFO  com.itheima.controller.DeptController-根据ID查询部门: 37
+2025-05-06 16:18:00.399 [http-nio-8080-exec-5] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:18:02.708 [http-nio-8080-exec-7] INFO  com.itheima.controller.DeptController-根据ID查询部门: 40
+2025-05-06 16:18:05.730 [http-nio-8080-exec-2] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:18:06.676 [http-nio-8080-exec-3] INFO  com.itheima.controller.DeptController-根据ID查询部门: 39
+2025-05-06 16:18:34.318 [http-nio-8080-exec-9] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:18:36.066 [http-nio-8080-exec-10] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:18:36.755 [http-nio-8080-exec-1] INFO  com.itheima.controller.DeptController-根据ID查询部门: 40
+2025-05-06 16:20:39.608 [http-nio-8080-exec-6] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:20:41.973 [http-nio-8080-exec-8] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:20:43.246 [http-nio-8080-exec-4] INFO  com.itheima.controller.DeptController-根据ID查询部门: 40
+2025-05-06 16:20:48.666 [http-nio-8080-exec-5] INFO  com.itheima.controller.DeptController-根据ID查询部门: 40
+2025-05-06 16:29:36.313 [http-nio-8080-exec-7] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:29:39.786 [http-nio-8080-exec-2] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:29:40.641 [http-nio-8080-exec-3] INFO  com.itheima.controller.DeptController-根据ID查询部门: 40
+2025-05-06 16:29:45.780 [http-nio-8080-exec-9] INFO  com.itheima.controller.DeptController-修改部门:Dept(id=40, name=sasc555, createTime=2025-05-06T15:50:52, updateTime=2025-05-06T15:50:52)
+2025-05-06 16:29:45.794 [http-nio-8080-exec-9] INFO  com.itheima.aop.OperationLogAspect-记录操作日志: OperateLog(id=null, operateEmpId=null, operateTime=2025-05-06T16:29:45.793266100, className=com.itheima.controller.DeptController, methodName=update, methodParams=[Dept(id=40, name=sasc555, createTime=2025-05-06T15:50:52, updateTime=2025-05-06T16:29:45.780800500)], returnValue=Result(code=1, msg=success, data=null), costTime=13)
+2025-05-06 16:29:47.705 [http-nio-8080-exec-10] INFO  com.itheima.controller.DeptController-修改部门:Dept(id=40, name=sasc555, createTime=2025-05-06T15:50:52, updateTime=2025-05-06T15:50:52)
+2025-05-06 16:29:47.712 [http-nio-8080-exec-10] INFO  com.itheima.aop.OperationLogAspect-记录操作日志: OperateLog(id=null, operateEmpId=null, operateTime=2025-05-06T16:29:47.712112100, className=com.itheima.controller.DeptController, methodName=update, methodParams=[Dept(id=40, name=sasc555, createTime=2025-05-06T15:50:52, updateTime=2025-05-06T16:29:47.705063700)], returnValue=Result(code=1, msg=success, data=null), costTime=7)
+2025-05-06 16:29:47.919 [http-nio-8080-exec-1] INFO  com.itheima.controller.DeptController-修改部门:Dept(id=40, name=sasc555, createTime=2025-05-06T15:50:52, updateTime=2025-05-06T15:50:52)
+2025-05-06 16:29:47.919 [http-nio-8080-exec-1] INFO  com.itheima.aop.OperationLogAspect-记录操作日志: OperateLog(id=null, operateEmpId=null, operateTime=2025-05-06T16:29:47.919632100, className=com.itheima.controller.DeptController, methodName=update, methodParams=[Dept(id=40, name=sasc555, createTime=2025-05-06T15:50:52, updateTime=2025-05-06T16:29:47.919632100)], returnValue=Result(code=1, msg=success, data=null), costTime=0)
+2025-05-06 16:29:48.145 [http-nio-8080-exec-6] INFO  com.itheima.controller.DeptController-修改部门:Dept(id=40, name=sasc555, createTime=2025-05-06T15:50:52, updateTime=2025-05-06T15:50:52)
+2025-05-06 16:29:48.146 [http-nio-8080-exec-6] INFO  com.itheima.aop.OperationLogAspect-记录操作日志: OperateLog(id=null, operateEmpId=null, operateTime=2025-05-06T16:29:48.146890800, className=com.itheima.controller.DeptController, methodName=update, methodParams=[Dept(id=40, name=sasc555, createTime=2025-05-06T15:50:52, updateTime=2025-05-06T16:29:48.145094700)], returnValue=Result(code=1, msg=success, data=null), costTime=1)
+2025-05-06 16:30:27.615 [http-nio-8080-exec-8] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:30:30.573 [http-nio-8080-exec-4] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:30:31.361 [http-nio-8080-exec-5] INFO  com.itheima.controller.DeptController-根据ID查询部门: 40
+2025-05-06 16:30:35.435 [http-nio-8080-exec-7] INFO  com.itheima.controller.DeptController-修改部门:Dept(id=40, name=sasc555ss, createTime=2025-05-06T15:50:52, updateTime=2025-05-06T16:29:48)
+2025-05-06 16:30:35.445 [http-nio-8080-exec-7] INFO  com.itheima.aop.OperationLogAspect-记录操作日志: OperateLog(id=null, operateEmpId=null, operateTime=2025-05-06T16:30:35.445809600, className=com.itheima.controller.DeptController, methodName=update, methodParams=[Dept(id=40, name=sasc555ss, createTime=2025-05-06T15:50:52, updateTime=2025-05-06T16:30:35.435754300)], returnValue=Result(code=1, msg=success, data=null), costTime=10)
+2025-05-06 16:30:35.461 [http-nio-8080-exec-2] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:37:21.864 [http-nio-8080-exec-3] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:37:25.836 [http-nio-8080-exec-9] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:37:26.892 [http-nio-8080-exec-10] INFO  com.itheima.controller.DeptController-根据ID查询部门: 40
+2025-05-06 16:39:08.569 [http-nio-8080-exec-1] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:43:25.655 [http-nio-8080-exec-6] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:43:29.227 [http-nio-8080-exec-8] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:43:32.785 [http-nio-8080-exec-4] INFO  com.itheima.controller.DeptController-根据ID删除部门: 40
+2025-05-06 16:43:32.809 [http-nio-8080-exec-4] INFO  com.itheima.aop.OperationLogAspect-记录操作日志: OperateLog(id=null, operateEmpId=null, operateTime=2025-05-06T16:43:32.809534600, className=com.itheima.controller.DeptController, methodName=delete, methodParams=[40], returnValue=Result(code=1, msg=success, data=null), costTime=24)
+2025-05-06 16:43:32.824 [http-nio-8080-exec-5] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:47:34.083 [http-nio-8080-exec-7] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:47:36.981 [http-nio-8080-exec-2] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:49:25.426 [http-nio-8080-exec-3] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:49:28.238 [http-nio-8080-exec-9] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:49:36.683 [http-nio-8080-exec-10] INFO  com.itheima.controller.DeptController-根据ID删除部门: 39
+2025-05-06 16:49:36.692 [http-nio-8080-exec-10] INFO  com.itheima.aop.OperationLogAspect-记录操作日志: OperateLog(id=null, operateEmpId=null, operateTime=2025-05-06T16:49:36.692797800, className=com.itheima.controller.DeptController, methodName=delete, methodParams=[39], returnValue=Result(code=1, msg=success, data=null), costTime=9)
+2025-05-06 16:49:36.704 [http-nio-8080-exec-1] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:49:58.831 [http-nio-8080-exec-6] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:50:01.801 [http-nio-8080-exec-8] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:50:06.281 [http-nio-8080-exec-4] INFO  com.itheima.controller.DeptController-根据ID删除部门: 38
+2025-05-06 16:50:06.285 [http-nio-8080-exec-4] INFO  com.itheima.aop.OperationLogAspect-记录操作日志: OperateLog(id=null, operateEmpId=null, operateTime=2025-05-06T16:50:06.285825200, className=com.itheima.controller.DeptController, methodName=delete, methodParams=[38], returnValue=Result(code=1, msg=success, data=null), costTime=4)
+2025-05-06 16:50:06.299 [http-nio-8080-exec-5] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:50:15.673 [http-nio-8080-exec-7] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:50:18.444 [http-nio-8080-exec-2] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:50:31.655 [http-nio-8080-exec-3] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:50:40.349 [http-nio-8080-exec-9] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:50:42.727 [http-nio-8080-exec-10] INFO  com.itheima.controller.DeptController-根据ID删除部门: 37
+2025-05-06 16:50:42.735 [http-nio-8080-exec-10] INFO  com.itheima.aop.OperationLogAspect-记录操作日志: OperateLog(id=null, operateEmpId=null, operateTime=2025-05-06T16:50:42.735198200, className=com.itheima.controller.DeptController, methodName=delete, methodParams=[37], returnValue=Result(code=1, msg=success, data=null), costTime=8)
+2025-05-06 16:50:42.748 [http-nio-8080-exec-1] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:50:52.965 [http-nio-8080-exec-6] INFO  com.itheima.controller.DeptController-根据ID删除部门: 36
+2025-05-06 16:50:52.971 [http-nio-8080-exec-6] INFO  com.itheima.aop.OperationLogAspect-记录操作日志: OperateLog(id=null, operateEmpId=null, operateTime=2025-05-06T16:50:52.971683, className=com.itheima.controller.DeptController, methodName=delete, methodParams=[36], returnValue=Result(code=1, msg=success, data=null), costTime=6)
+2025-05-06 16:50:52.981 [http-nio-8080-exec-8] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:51:22.858 [http-nio-8080-exec-4] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:51:36.116 [http-nio-8080-exec-5] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:51:40.058 [http-nio-8080-exec-7] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:51:50.081 [http-nio-8080-exec-2] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:51:52.395 [http-nio-8080-exec-3] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:52:01.872 [http-nio-8080-exec-9] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:52:06.512 [http-nio-8080-exec-10] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:54:29.008 [http-nio-8080-exec-1] INFO  com.itheima.controller.DeptController-根据ID查询部门: 35
+2025-05-06 16:54:31.808 [http-nio-8080-exec-6] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:54:34.243 [http-nio-8080-exec-8] INFO  com.itheima.controller.DeptController-根据ID查询部门: 35
+2025-05-06 16:54:40.409 [http-nio-8080-exec-4] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 16:54:41.930 [http-nio-8080-exec-5] INFO  com.itheima.controller.DeptController-根据ID查询部门: 35
+2025-05-06 16:54:45.741 [http-nio-8080-exec-7] INFO  com.itheima.controller.DeptController-修改部门:Dept(id=35, name=WDG, createTime=2025-05-06T15:10:55, updateTime=2025-05-06T15:10:55)
+2025-05-06 16:54:45.748 [http-nio-8080-exec-7] INFO  com.itheima.aop.OperationLogAspect-记录操作日志: OperateLog(id=null, operateEmpId=null, operateTime=2025-05-06T16:54:45.748027600, className=com.itheima.controller.DeptController, methodName=update, methodParams=[Dept(id=35, name=WDG, createTime=2025-05-06T15:10:55, updateTime=2025-05-06T16:54:45.742067800)], returnValue=Result(code=1, msg=success, data=null), costTime=7)
+2025-05-06 16:54:45.761 [http-nio-8080-exec-2] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 17:01:34.331 [http-nio-8080-exec-3] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 17:02:36.315 [http-nio-8080-exec-9] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 17:02:43.170 [http-nio-8080-exec-10] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 17:02:48.649 [http-nio-8080-exec-1] INFO  com.itheima.controller.DeptController-根据ID查询部门: 35
+2025-05-06 17:02:53.346 [http-nio-8080-exec-6] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 17:05:05.897 [http-nio-8080-exec-8] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 17:05:09.426 [http-nio-8080-exec-4] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 17:05:10.230 [http-nio-8080-exec-5] INFO  com.itheima.controller.DeptController-根据ID查询部门: 35
+2025-05-06 17:05:13.549 [http-nio-8080-exec-7] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 17:05:20.172 [http-nio-8080-exec-2] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 17:07:09.334 [http-nio-8080-exec-3] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 17:07:12.557 [http-nio-8080-exec-9] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 17:07:14.494 [http-nio-8080-exec-10] INFO  com.itheima.controller.DeptController-根据ID查询部门: 35
+2025-05-06 17:07:16.496 [http-nio-8080-exec-1] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 17:07:24.186 [http-nio-8080-exec-6] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 17:07:48.152 [http-nio-8080-exec-8] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 17:08:19.594 [http-nio-8080-exec-4] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 17:08:21.867 [http-nio-8080-exec-5] INFO  com.itheima.controller.DeptController-新增部门:Dept(id=null, name=ascac, createTime=null, updateTime=null)
+2025-05-06 17:08:21.874 [http-nio-8080-exec-5] INFO  com.itheima.aop.OperationLogAspect-记录操作日志: OperateLog(id=null, operateEmpId=null, operateTime=2025-05-06T17:08:21.874921800, className=com.itheima.controller.DeptController, methodName=add, methodParams=[Dept(id=null, name=ascac, createTime=2025-05-06T17:08:21.867470, updateTime=2025-05-06T17:08:21.867470)], returnValue=Result(code=1, msg=success, data=null), costTime=7)
+2025-05-06 17:08:21.892 [http-nio-8080-exec-7] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 17:08:28.459 [http-nio-8080-exec-2] INFO  com.itheima.controller.DeptController-根据ID查询部门: 41
+2025-05-06 17:08:30.377 [http-nio-8080-exec-3] INFO  com.itheima.controller.DeptController-修改部门:Dept(id=41, name=ascacafc, createTime=2025-05-06T17:08:22, updateTime=2025-05-06T17:08:22)
+2025-05-06 17:08:30.383 [http-nio-8080-exec-3] INFO  com.itheima.aop.OperationLogAspect-记录操作日志: OperateLog(id=null, operateEmpId=null, operateTime=2025-05-06T17:08:30.383397200, className=com.itheima.controller.DeptController, methodName=update, methodParams=[Dept(id=41, name=ascacafc, createTime=2025-05-06T17:08:22, updateTime=2025-05-06T17:08:30.377093)], returnValue=Result(code=1, msg=success, data=null), costTime=6)
+2025-05-06 17:08:30.394 [http-nio-8080-exec-9] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 17:09:44.235 [http-nio-8080-exec-10] INFO  com.itheima.controller.DeptController-根据ID查询部门: 41
+2025-05-06 17:10:44.703 [http-nio-8080-exec-1] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 17:10:52.301 [http-nio-8080-exec-6] INFO  com.itheima.controller.DeptController-新增部门:Dept(id=null, name=scasc, createTime=null, updateTime=null)
+2025-05-06 17:10:52.309 [http-nio-8080-exec-6] INFO  com.itheima.aop.OperationLogAspect-记录操作日志: OperateLog(id=null, operateEmpId=null, operateTime=2025-05-06T17:10:52.309806100, className=com.itheima.controller.DeptController, methodName=add, methodParams=[Dept(id=null, name=scasc, createTime=2025-05-06T17:10:52.301656600, updateTime=2025-05-06T17:10:52.301656600)], returnValue=Result(code=1, msg=success, data=null), costTime=8)
+2025-05-06 17:10:52.322 [http-nio-8080-exec-8] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 17:11:44.351 [http-nio-8080-exec-4] INFO  com.itheima.controller.DeptController-根据ID查询部门: 42
+2025-05-06 17:11:48.604 [http-nio-8080-exec-5] INFO  com.itheima.controller.DeptController-修改部门:Dept(id=42, name=scasc, createTime=2025-05-06T17:10:52, updateTime=2025-05-06T17:10:52)
+2025-05-06 17:11:48.609 [http-nio-8080-exec-5] INFO  com.itheima.aop.OperationLogAspect-记录操作日志: OperateLog(id=null, operateEmpId=null, operateTime=2025-05-06T17:11:48.609171100, className=com.itheima.controller.DeptController, methodName=update, methodParams=[Dept(id=42, name=scasc, createTime=2025-05-06T17:10:52, updateTime=2025-05-06T17:11:48.604357900)], returnValue=Result(code=1, msg=success, data=null), costTime=5)
+2025-05-06 17:11:48.621 [http-nio-8080-exec-7] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 17:12:11.426 [http-nio-8080-exec-2] INFO  com.itheima.controller.DeptController-新增部门:Dept(id=null, name=sdv, createTime=null, updateTime=null)
+2025-05-06 17:12:11.439 [http-nio-8080-exec-2] INFO  com.itheima.aop.OperationLogAspect-记录操作日志: OperateLog(id=null, operateEmpId=null, operateTime=2025-05-06T17:12:11.439287500, className=com.itheima.controller.DeptController, methodName=add, methodParams=[Dept(id=null, name=sdv, createTime=2025-05-06T17:12:11.426230600, updateTime=2025-05-06T17:12:11.426230600)], returnValue=Result(code=1, msg=success, data=null), costTime=13)
+2025-05-06 17:12:11.458 [http-nio-8080-exec-3] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 17:16:17.626 [http-nio-8080-exec-9] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 17:16:20.118 [http-nio-8080-exec-10] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 17:18:19.924 [http-nio-8080-exec-1] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 17:18:22.260 [http-nio-8080-exec-6] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 17:19:25.895 [http-nio-8080-exec-8] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 17:19:28.275 [http-nio-8080-exec-4] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 17:22:52.663 [http-nio-8080-exec-5] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 17:23:04.638 [http-nio-8080-exec-7] INFO  com.itheima.controller.DeptController-新增部门:Dept(id=null, name=ss, createTime=null, updateTime=null)
+2025-05-06 17:23:04.644 [http-nio-8080-exec-7] INFO  com.itheima.aop.OperationLogAspect-记录操作日志: OperateLog(id=null, operateEmpId=null, operateTime=2025-05-06T17:23:04.644464, className=com.itheima.controller.DeptController, methodName=add, methodParams=[Dept(id=null, name=ss, createTime=2025-05-06T17:23:04.638461500, updateTime=2025-05-06T17:23:04.638461500)], returnValue=Result(code=1, msg=success, data=null), costTime=6)
+2025-05-06 17:23:04.660 [http-nio-8080-exec-2] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 17:23:07.474 [http-nio-8080-exec-3] INFO  com.itheima.controller.DeptController-根据ID删除部门: 44
+2025-05-06 17:23:07.482 [http-nio-8080-exec-3] INFO  com.itheima.aop.OperationLogAspect-记录操作日志: OperateLog(id=null, operateEmpId=null, operateTime=2025-05-06T17:23:07.482902300, className=com.itheima.controller.DeptController, methodName=delete, methodParams=[44], returnValue=Result(code=1, msg=success, data=null), costTime=8)
+2025-05-06 17:23:07.492 [http-nio-8080-exec-9] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 17:46:14.910 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2025-05-06 17:46:14.921 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2025-05-06 18:21:48.280 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 17.0.4.1 with PID 29440 (E:\my_project\tlias\tlias-web-management\target\classes started by forwardSun in E:\my_project\tlias)
+2025-05-06 18:21:48.281 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-05-06 18:21:48.991 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-05-06 18:21:48.999 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-06 18:21:49.001 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-05-06 18:21:49.001 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-05-06 18:21:49.040 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-05-06 18:21:49.040 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 736 ms
+2025-05-06 18:21:49.556 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-05-06 18:21:49.567 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path ''
+2025-05-06 18:21:49.573 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 1.504 seconds (process running for 2.044)
+2025-05-06 18:21:51.095 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-06 18:21:51.095 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-05-06 18:21:51.096 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2025-05-06 18:21:51.163 [http-nio-8080-exec-1] INFO  com.itheima.controller.DeptController-新增部门:Dept(id=null, name=zvdfb, createTime=null, updateTime=null)
+2025-05-06 18:21:51.174 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-05-06 18:21:51.386 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7ab927cc
+2025-05-06 18:21:51.386 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-05-06 18:21:51.416 [http-nio-8080-exec-1] INFO  com.itheima.aop.OperationLogAspect-记录操作日志: OperateLog(id=null, operateEmpId=null, operateTime=2025-05-06T18:21:51.415313500, className=com.itheima.controller.DeptController, methodName=add, methodParams=[Dept(id=null, name=zvdfb, createTime=2025-05-06T18:21:51.163276700, updateTime=2025-05-06T18:21:51.163276700)], returnValue=Result(code=1, msg=success, data=null), costTime=252)
+2025-05-06 18:21:51.445 [http-nio-8080-exec-3] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 18:21:54.383 [http-nio-8080-exec-4] INFO  com.itheima.controller.DeptController-根据ID查询部门: 45
+2025-05-06 18:21:57.244 [http-nio-8080-exec-9] INFO  com.itheima.controller.DeptController-根据ID查询部门: 43
+2025-05-06 18:22:14.016 [http-nio-8080-exec-5] INFO  com.itheima.controller.DeptController-新增部门:Dept(id=null, name=scas, createTime=null, updateTime=null)
+2025-05-06 18:22:14.024 [http-nio-8080-exec-5] INFO  com.itheima.aop.OperationLogAspect-记录操作日志: OperateLog(id=null, operateEmpId=null, operateTime=2025-05-06T18:22:14.024530900, className=com.itheima.controller.DeptController, methodName=add, methodParams=[Dept(id=null, name=scas, createTime=2025-05-06T18:22:14.017142700, updateTime=2025-05-06T18:22:14.017142700)], returnValue=Result(code=1, msg=success, data=null), costTime=8)
+2025-05-06 18:22:14.037 [http-nio-8080-exec-6] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 18:22:48.141 [http-nio-8080-exec-7] INFO  com.itheima.controller.DeptController-根据ID删除部门: 46
+2025-05-06 18:22:48.152 [http-nio-8080-exec-7] INFO  com.itheima.aop.OperationLogAspect-记录操作日志: OperateLog(id=null, operateEmpId=null, operateTime=2025-05-06T18:22:48.152279100, className=com.itheima.controller.DeptController, methodName=delete, methodParams=[46], returnValue=Result(code=1, msg=success, data=null), costTime=11)
+2025-05-06 18:22:48.177 [http-nio-8080-exec-8] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 18:22:51.712 [http-nio-8080-exec-2] INFO  com.itheima.controller.DeptController-根据ID删除部门: 45
+2025-05-06 18:22:51.724 [http-nio-8080-exec-2] INFO  com.itheima.aop.OperationLogAspect-记录操作日志: OperateLog(id=null, operateEmpId=null, operateTime=2025-05-06T18:22:51.724525400, className=com.itheima.controller.DeptController, methodName=delete, methodParams=[45], returnValue=Result(code=1, msg=success, data=null), costTime=12)
+2025-05-06 18:22:51.743 [http-nio-8080-exec-10] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 18:22:53.649 [http-nio-8080-exec-1] INFO  com.itheima.controller.DeptController-根据ID删除部门: 43
+2025-05-06 18:22:53.659 [http-nio-8080-exec-1] INFO  com.itheima.aop.OperationLogAspect-记录操作日志: OperateLog(id=null, operateEmpId=null, operateTime=2025-05-06T18:22:53.659406, className=com.itheima.controller.DeptController, methodName=delete, methodParams=[43], returnValue=Result(code=1, msg=success, data=null), costTime=10)
+2025-05-06 18:22:53.675 [http-nio-8080-exec-3] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 18:22:55.002 [http-nio-8080-exec-4] INFO  com.itheima.controller.DeptController-根据ID删除部门: 42
+2025-05-06 18:22:55.016 [http-nio-8080-exec-4] INFO  com.itheima.aop.OperationLogAspect-记录操作日志: OperateLog(id=null, operateEmpId=null, operateTime=2025-05-06T18:22:55.016327500, className=com.itheima.controller.DeptController, methodName=delete, methodParams=[42], returnValue=Result(code=1, msg=success, data=null), costTime=14)
+2025-05-06 18:22:55.032 [http-nio-8080-exec-9] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 18:22:56.419 [http-nio-8080-exec-5] INFO  com.itheima.controller.DeptController-根据ID删除部门: 41
+2025-05-06 18:22:56.428 [http-nio-8080-exec-5] INFO  com.itheima.aop.OperationLogAspect-记录操作日志: OperateLog(id=null, operateEmpId=null, operateTime=2025-05-06T18:22:56.428409300, className=com.itheima.controller.DeptController, methodName=delete, methodParams=[41], returnValue=Result(code=1, msg=success, data=null), costTime=9)
+2025-05-06 18:22:56.443 [http-nio-8080-exec-6] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-05-06 18:23:34.300 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2025-05-06 18:23:34.310 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2025-05-06 22:32:06.721 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 17.0.4.1 with PID 2700 (E:\my_project\tlias\tlias-web-management\target\classes started by forwardSun in E:\my_project\tlias)
+2025-05-06 22:32:06.729 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-05-06 22:32:07.734 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-05-06 22:32:07.744 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-06 22:32:07.747 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-05-06 22:32:07.747 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-05-06 22:32:07.792 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-05-06 22:32:07.792 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 1035 ms
+2025-05-06 22:32:08.539 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-05-06 22:32:08.552 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path ''
+2025-05-06 22:32:08.559 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 2.148 seconds (process running for 2.913)
+2025-05-06 22:32:12.213 [http-nio-8080-exec-1] INFO  org.apache.coyote.http11.Http11Processor-Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in the request target [/emps?name=&gender=&begin=&end=&page=[object%20Object]&pageSize=[object%20Object] ]. The valid characters are defined in RFC 7230 and RFC 3986
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:482)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:257)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2025-05-06 22:45:44.411 [http-nio-8080-exec-4] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-06 22:45:44.411 [http-nio-8080-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-05-06 22:45:44.411 [http-nio-8080-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 0 ms
+2025-05-06 22:45:44.437 [http-nio-8080-exec-4] INFO  com.itheima.controller.EmpController-查询所有的员工数据
+2025-05-06 22:45:44.442 [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-05-06 22:45:44.722 [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1ccc5d0f
+2025-05-06 22:45:44.722 [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-05-06 22:50:29.781 [http-nio-8080-exec-3] INFO  com.itheima.controller.EmpController-分页查询: EmpQueryParam(page=4, pageSize=100, name=, gender=null, begin=null, end=null)
+2025-05-06 22:50:32.684 [http-nio-8080-exec-2] INFO  com.itheima.controller.EmpController-分页查询: EmpQueryParam(page=4, pageSize=100, name=, gender=null, begin=null, end=null)
+2025-05-06 22:53:33.161 [http-nio-8080-exec-10] INFO  com.itheima.controller.EmpController-分页查询: EmpQueryParam(page=1, pageSize=100, name=, gender=null, begin=null, end=null)
+2025-05-06 22:53:36.831 [http-nio-8080-exec-5] INFO  com.itheima.controller.EmpController-分页查询: EmpQueryParam(page=1, pageSize=100, name=, gender=null, begin=null, end=null)
+2025-05-06 22:53:43.561 [http-nio-8080-exec-8] INFO  com.itheima.controller.EmpController-分页查询: EmpQueryParam(page=1, pageSize=5, name=, gender=null, begin=null, end=null)
+2025-05-06 22:53:44.907 [http-nio-8080-exec-6] INFO  com.itheima.controller.EmpController-分页查询: EmpQueryParam(page=2, pageSize=5, name=, gender=null, begin=null, end=null)
+2025-05-06 22:53:45.351 [http-nio-8080-exec-9] INFO  com.itheima.controller.EmpController-分页查询: EmpQueryParam(page=3, pageSize=5, name=, gender=null, begin=null, end=null)
+2025-05-06 22:53:45.626 [http-nio-8080-exec-7] INFO  com.itheima.controller.EmpController-分页查询: EmpQueryParam(page=4, pageSize=5, name=, gender=null, begin=null, end=null)
+2025-05-06 22:53:46.179 [http-nio-8080-exec-1] INFO  com.itheima.controller.EmpController-分页查询: EmpQueryParam(page=5, pageSize=5, name=, gender=null, begin=null, end=null)
+2025-05-06 22:53:46.919 [http-nio-8080-exec-4] INFO  com.itheima.controller.EmpController-分页查询: EmpQueryParam(page=3, pageSize=5, name=, gender=null, begin=null, end=null)
+2025-05-06 22:53:47.804 [http-nio-8080-exec-3] INFO  com.itheima.controller.EmpController-分页查询: EmpQueryParam(page=1, pageSize=5, name=, gender=null, begin=null, end=null)
+2025-05-06 22:53:51.474 [http-nio-8080-exec-2] INFO  com.itheima.controller.EmpController-分页查询: EmpQueryParam(page=3, pageSize=5, name=, gender=null, begin=null, end=null)
+2025-05-06 22:53:52.795 [http-nio-8080-exec-10] INFO  com.itheima.controller.EmpController-分页查询: EmpQueryParam(page=3, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-05-06 22:54:00.561 [http-nio-8080-exec-5] INFO  com.itheima.controller.EmpController-分页查询: EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-05-06 22:54:02.405 [http-nio-8080-exec-8] INFO  com.itheima.controller.EmpController-分页查询: EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-05-06 22:54:07.977 [http-nio-8080-exec-6] INFO  com.itheima.controller.EmpController-分页查询: EmpQueryParam(page=1, pageSize=10, name=高, gender=null, begin=null, end=null)
+2025-05-06 22:54:12.800 [http-nio-8080-exec-9] INFO  com.itheima.controller.EmpController-分页查询: EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-05-06 23:03:34.052 [http-nio-8080-exec-7] INFO  com.itheima.controller.EmpController-分页查询: EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-05-06 23:08:46.234 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2025-05-06 23:08:46.240 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.

@@ -1,0 +1,11 @@
+2025-04-19 17:09:05.694 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 17.0.4.1 with PID 32588 (E:\my_project\tlias\tlias-web-management\target\classes started by forwardSun in E:\my_project\tlias)
+2025-04-19 17:09:05.696 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-04-19 17:09:06.675 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-04-19 17:09:06.682 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-19 17:09:06.684 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-04-19 17:09:06.684 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-04-19 17:09:06.722 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-04-19 17:09:06.722 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 997 ms
+2025-04-19 17:09:07.328 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-04-19 17:09:07.339 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path ''
+2025-04-19 17:09:07.346 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 1.947 seconds (process running for 2.86)
