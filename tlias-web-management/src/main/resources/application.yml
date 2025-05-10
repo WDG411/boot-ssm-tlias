@@ -31,5 +31,5 @@ logging:
 aliyun:
   oss:
     endpoint: https://oss-cn-beijing.aliyuncs.com
-    bucketName: wdg
+    bucketName: java-ai
     region: cn-beijing
